@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&family=Fira+Code:wght@400;500;600&family=Kalam:wght@300;400;700&family=Mulish:ital,wght@0,300;0,400;0,700;1,500;1,600&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito:ital,wght@0,400;0,500;1,400&family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Patrick+Hand&family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Roboto:ital,wght@0,100;0,400;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0s;
+}
