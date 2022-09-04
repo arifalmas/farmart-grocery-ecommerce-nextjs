@@ -1,18 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&family=Fira+Code:wght@400;500;600&family=Kalam:wght@300;400;700&family=Mulish:ital,wght@0,300;0,400;0,700;1,500;1,600&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito:ital,wght@0,400;0,500;1,400&family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Patrick+Hand&family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Roboto:ital,wght@0,100;0,400;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Mulish', sans-serif;
 }
+
 
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0s;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-title;
+}
+
+p {
+  @apply text-color;
+}
+
+/* tailwind components */
+@layer components {
+
+  /* Wrapper container */
+  .container {
+    @apply  !max-w-screen-2xl mx-auto px-5;
+  }
+
+  /* Buttons */
+  .btn-white {
+    @apply bg-white text-title font-bold px-7 py-3 block w-fit rounded transition duration-300 ease-in-out;
+  }
+
+  /* Section title */
+  .section-title {
+    @apply text-4xl text-2xl font-bold text-center text-title;
+  }
+
+  /* card Shadow */
+  .card-shadow {
+    box-shadow: 0 30px 40px 0 rgb(131 132 135 / 15%);
+    -webkit-box-shadow: 0 30px 40px 0 rgb(131 132 135 / 15%);
+  }
+
+  /* Hide Scrollbar */
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
 }
