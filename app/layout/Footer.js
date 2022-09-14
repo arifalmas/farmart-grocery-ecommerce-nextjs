@@ -48,16 +48,16 @@ const Footer = () => {
                 <FiPhoneCall className="text-color mt-[5px]" />
                 <div className="ml-4">
                   <p>Hotline 24/7:</p>
-                  <h3 className="text-2xl font-bold">(+880) 1787-463481 </h3>
+                  <h3 className="text-2xl font-bold">(+880) 1648-043030 </h3>
                 </div>
               </span>
               <span className="flex !mt-5">
                 <AiOutlineHome className="text-color mt-[5px]" />
-                <address className="ml-4 text-color not-italic">Badda, Dhaka 1212, Bangladesh</address>
+                <address className="ml-4 text-color not-italic">Adamdighi, Bogra, Bangladesh</address>
               </span>
               <span className="flex">
                 <AiOutlineMail className="text-color mt-[5px]" />
-                <p className="ml-4">khalideofficial@gmail.com</p>
+                <p className="ml-4">arifalmasdev@gmail.com</p>
               </span>
             </div>
           </div>
@@ -152,4 +152,3 @@ const FooterLink = ({ href = "#", text }) => (
 )
 
 export default Footer
-

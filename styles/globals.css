@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
-
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 h1,
 h2,
 h3,
@@ -25,29 +22,23 @@ h5,
 h6 {
   @apply text-title;
 }
-
 p {
   @apply text-color;
 }
-
 /* tailwind components */
 @layer components {
-
   /* Wrapper container */
   .container {
-    @apply  !max-w-screen-2xl mx-auto px-5;
+    @apply !max-w-screen-2xl mx-auto px-5;
   }
-
   /* Buttons */
   .btn-white {
-    @apply bg-white text-title font-bold px-7 py-3 block w-fit rounded transition duration-300 ease-in-out;
+    @apply bg-white text-title font-bold px-7 py-3 block w-fit rounded hover:shadow-md transition duration-300 ease-in-out;
   }
-
   /* Section title */
   .section-title {
-    @apply text-4xl text-2xl font-bold text-center text-title;
+    @apply md:text-4xl text-2xl font-bold text-center text-title;
   }
-
   /* card Shadow */
   .card-shadow {
     box-shadow: 0 30px 40px 0 rgb(131 132 135 / 15%);
@@ -58,13 +49,16 @@ p {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
-
   }
 
   .no-scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Products */
+  /* product card */
+  .product-card {
+    @apply !w-[275px] flex flex-col items-start cursor-pointer p-5 rounded hover:card-shadow transition-all duration-500 relative border border-gray-100 hover:border-gray-200;
   }
 }
